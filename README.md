@@ -7,22 +7,25 @@
 
 [APIs]
 	
-	Functions:
+Functions:
 	
-		getGrade(username, password, course_name):
-			Returns your final score corresponding to the course name you provide.If no course is found to match the course name, it will return None.
+getGrade(username, password, course_name):
+  Returns your final score corresponding to the course name you provide.If no course is found to match the course name, it will return None.
 		
-		getGPA(username, password):
-			Returns your GPA in float type.
+getGPA(username, password):
+  Returns your GPA in float type.
 	
-	Class:
+Class:
 	
-		Login(object):
+Login(object):
 		
-			Interfaces:
+Interfaces:
 			
-				__init__(self, username, password):When creating a Login object you should provide your username, and your password.
+__init__(self, username, password):
+  When creating a Login object you should provide your username, and your password.
 			
-				log(self, username, username):This method simply does the work of logging into the system and does nothing else.
+log(self, username, username):
+  This method simply does the work of logging into the system and does nothing else.
 				
-				visit(self, url):This method returns a Response object after making an HTTP request to the provided URL.If the request fails to get the right response, it will call the log method again and again until the aimed page is available.
+visit(self, url):
+  This method returns a Response object after making an HTTP request to the provided URL.If the request fails to get the right response, it will call the log method again and again until the aimed page is available.
