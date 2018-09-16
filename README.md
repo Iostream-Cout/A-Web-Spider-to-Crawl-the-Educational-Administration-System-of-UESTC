@@ -29,3 +29,18 @@ log(self, username, username):
 				
 visit(self, url):
   This method returns a Response object after making an HTTP request to the provided URL.If the request fails to get the right response, it will call the log method again and again until the aimed page is available.
+
+[Examples]
+
+            import uestclogin
+		print getGrade('201601010101001', '123456', u'微积分I')
+This code prints your final score of '微积分I'.
+
+		import uestclogin
+		print getGPA('2016010101001', '123456')
+This code prints your GPA.
+
+		from uestclogin import Login
+		login = Login('2016120101001', '123456')
+		print login.visit('http://portal.uestc.edu.cn/').text
+This code prints the HTML of the homepage of the UESTC portal.
