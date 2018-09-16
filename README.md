@@ -6,6 +6,7 @@
 	The interface of the package is extensible. You can develop your own interfaces according to your need.
 
 [APIs]
+	
 	Functions:
 	
 		getGrade(username, password, course_name):
