@@ -48,5 +48,5 @@ This code prints your GPA.
 		    login = Login('2016120101001', '123456')
 		    print login.visit('http://portal.uestc.edu.cn/').text
 		finally:
-		    login.close
+		    login.close()
 This code prints the HTML of the homepage of the UESTC portal.
