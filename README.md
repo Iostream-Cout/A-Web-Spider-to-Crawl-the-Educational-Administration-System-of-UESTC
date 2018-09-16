@@ -1,4 +1,4 @@
-# A-Web-Spider-to-Crawl-the-Educational-Administration-System-of-UESTC
+# A-Web-Spider-to-Crawl-the-Educational-Administration-System-of-UESTC 
 
 [Introduction]
 	This package provides a web spider interface to crawl the Educational Administration System of UESTC(University of Electronic Science of China). The spider does no harm to the system if used properly and legally. 
