@@ -29,6 +29,9 @@ log(self, username, username):
 				
 visit(self, url):
   This method returns a Response object after making an HTTP request to the provided URL.If the request fails to get the right response, it will call the log method again and again until the aimed page is available.
+  
+  close(self):
+    This method should be called before the end of the programme. It saves the cookies to a file.
 
 [Examples]
 
@@ -41,6 +44,9 @@ This code prints your final score of '微积分I'.
 This code prints your GPA.
 
 		from uestclogin import Login
-		login = Login('2016120101001', '123456')
-		print login.visit('http://portal.uestc.edu.cn/').text
+		try:
+		    login = Login('2016120101001', '123456')
+		    print login.visit('http://portal.uestc.edu.cn/').text
+		finally:
+		    login.close
 This code prints the HTML of the homepage of the UESTC portal.
